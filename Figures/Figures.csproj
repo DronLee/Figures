@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Circle.cs" />
+    <Compile Include="IncorrectFigure.cs" />
     <Compile Include="UnknownFigure.cs" />
     <Compile Include="IFigure.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
