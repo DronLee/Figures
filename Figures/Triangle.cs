@@ -23,9 +23,9 @@ namespace Figures
         {
             _sortedSides = new double[] { side1, side2, side3 }.OrderBy(s => s).ToArray();
             if (_sortedSides[0] <= 0)
-                throw new Exception("Все стороны должны быть больше нуля.");
+                throw new IncorrectFigure("Все стороны должны быть больше нуля.");
             if (_sortedSides[2] >= _sortedSides[0] + _sortedSides[1])
-                throw new Exception("Ни одна из сторон не должна превышать сумму двух других.");
+                throw new IncorrectFigure("Ни одна из сторон не должна превышать сумму двух других.");
         }
 
         /// <summary>

@@ -16,7 +16,7 @@ namespace Figures
         public Circle(double radius)
         {
             if (radius <= 0)
-                throw new Exception("Радиус должен быть больше нуля.");
+                throw new IncorrectFigure("Радиус должен быть больше нуля.");
             _radius = radius;
         }
 
